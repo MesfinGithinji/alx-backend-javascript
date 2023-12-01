@@ -20,6 +20,10 @@ export default class HolbertonClass {
     this._location = value;
   }
 
+  /**
+   * if class is cast into a Number, it should return the size.
+   * if class is cast into a String, it should return the location.
+   */
   [Symbol.toPrimitive](hint) {
     if (hint === 'number') {
       return this.size;
