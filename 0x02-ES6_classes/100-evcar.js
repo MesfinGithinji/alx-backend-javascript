@@ -14,6 +14,7 @@ export default class EVCar extends Car {
     this._range = value;
   }
 
+  // implement another constructor here
   cloneCar() {
     const Species = super.constructor[Symbol.species];
 
