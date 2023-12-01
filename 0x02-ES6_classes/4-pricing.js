@@ -31,9 +31,11 @@ export default class Pricing {
   displayFullPrice() {
     return `${this.amount} ${this.currency.name} (${this.currency.code})`;
   }
-  
-  //remember static methods only modify class level data
-  //static methods are associated with the class itself rather than an instance.
+
+  /**
+   * remember static methods only modify class level data
+   * static methods are associated with the class itself rather than an instance.
+   */
   static convertPrice(amount, conversionRate) {
     if (typeof amount !== 'number') {
       throw new TypeError('amount must be a number');
