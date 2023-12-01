@@ -20,6 +20,7 @@ export default class Currency {
     this._name = value;
   }
 
+  // non static method
   displayFullCurrency() {
     return `${this.name} (${this.code})`;
   }
