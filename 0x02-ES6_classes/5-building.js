@@ -1,3 +1,8 @@
+/**
+ * We will consider this an abstract class
+ * any class that extends from it should implement
+ * a method named evacuationWarningMessage
+ */
 export default class Building {
   constructor(sqft) {
     this.sqft = sqft;
