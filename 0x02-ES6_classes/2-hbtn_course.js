@@ -6,6 +6,7 @@ export default class HolbertonCourse {
    * length(number) how long will it take
    * students(array of Strings) names of students enrolled
    */
+
   constructor(name, length, students) {
     this.name = name;
     this.length = length;
