@@ -33,6 +33,12 @@ export default class Car {
     return this;
   }
 
+  /**
+   *  A symbol is a unique and immutable data type that is often used as an identifier
+   * for object properties.
+   * Unlike strings or numbers, symbols are guaranteed to be unique,
+   *  meaning that no two symbols will be the same.
+   */
   cloneCar() {
     const Species = this.constructor[Symbol.species];
 
