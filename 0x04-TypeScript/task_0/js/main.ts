@@ -9,7 +9,7 @@ const firstStudent: Student = {
 	firstname: "Mesh",
 	lastname: "Mezi",
 	age: 20,
-	location: "Nairobi".
+	location: "Nairobi",
 }
 
 const secondStudent: Student = {
@@ -65,7 +65,7 @@ export const displayStudents = (students: Array<Student>): void => {
 
   for (const student of students) {
     const bodyRow = document.createElement('tr');
-    bodyRow.insertAdjacentHTML('beforeend', `<td>${student.firstName}</td>`);
+    bodyRow.insertAdjacentHTML('beforeend', `<td>${student.firstname}</td>`);
     bodyRow.insertAdjacentHTML('beforeend', `<td>${student.location}</td>`);
     tableBody.insertAdjacentElement('beforeend', bodyRow);
   }
